@@ -5,7 +5,7 @@
   <%= image_tag @course.image, class: 'img-fluid' %>
   <br />
   <div class="row">
-    <div class="col-sm col-12 text-center">
+    <div class="col-sm-4 col-12 text-center">
       <span class="badge badge-default">
         <%= number_to_currency @course.cost %>
       </span>
@@ -21,6 +21,7 @@
       <%= @course.description %>
     </div>
   </div>
+</div>
 
   <div class="col-12">
     <% @course.sections.each do |section| %>
