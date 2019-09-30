@@ -9,5 +9,3 @@ class LessonsController < ApplicationController
     @current_lesson ||= Lesson.find(params[:id])
   end
 end
-
-
